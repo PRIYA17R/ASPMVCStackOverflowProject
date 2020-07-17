@@ -85,3 +85,6 @@ C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverFlowProject\obj\Debug\St
 C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverFlowProject\obj\Debug\StackOverFlowProject.csproj.CopyComplete
 C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverFlowProject\obj\Debug\StackOverFlowProject.dll
 C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverFlowProject\obj\Debug\StackOverFlowProject.pdb
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverFlowProject\bin\stackOverflow.ViewModels.dll
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverFlowProject\bin\stackOverflow.ViewModels.pdb
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverFlowProject\bin\stackOverflow.ViewModels.dll.config

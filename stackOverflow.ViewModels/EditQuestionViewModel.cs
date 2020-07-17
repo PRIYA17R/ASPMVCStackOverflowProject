@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace stackOverflow.ViewModels
 {
-   public class AnswersViewModel
+   public class EditQuestionViewModel
     {
         [Required]
 

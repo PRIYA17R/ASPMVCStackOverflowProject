@@ -13,3 +13,6 @@ C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\obj\De
 C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\bin\Debug\StackOverflow.Repositories.dll
 C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\bin\Debug\StackOverflow.Repositories.pdb
 C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\bin\Debug\StackOverflow.Repositories.dll.config
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\bin\Debug\stackOverflow.ViewModels.dll
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\bin\Debug\stackOverflow.ViewModels.pdb
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\bin\Debug\stackOverflow.ViewModels.dll.config
