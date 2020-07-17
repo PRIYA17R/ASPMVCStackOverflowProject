@@ -10,3 +10,6 @@ C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\obj\De
 C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\obj\Debug\StackOverflow.ServiceLayer.csproj.CopyComplete
 C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\obj\Debug\StackOverflow.ServiceLayer.dll
 C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\obj\Debug\StackOverflow.ServiceLayer.pdb
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\bin\Debug\StackOverflow.Repositories.dll
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\bin\Debug\StackOverflow.Repositories.pdb
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\bin\Debug\StackOverflow.Repositories.dll.config
