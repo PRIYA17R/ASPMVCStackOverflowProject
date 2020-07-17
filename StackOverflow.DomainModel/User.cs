@@ -19,7 +19,7 @@ namespace StackOverflow.DomainModel
         public string Name { get; set; }
         public string Mobile { get; set; }
 
-        public string IsAdmin  { get; set; }
+        public Boolean IsAdmin  { get; set; }
 
 
     }
