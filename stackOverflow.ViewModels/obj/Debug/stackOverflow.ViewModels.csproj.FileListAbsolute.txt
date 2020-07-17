@@ -1,0 +1,6 @@
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\stackOverflow.ViewModels\bin\Debug\stackOverflow.ViewModels.dll
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\stackOverflow.ViewModels\bin\Debug\stackOverflow.ViewModels.pdb
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\stackOverflow.ViewModels\obj\Debug\stackOverflow.ViewModels.csprojAssemblyReference.cache
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\stackOverflow.ViewModels\obj\Debug\stackOverflow.ViewModels.csproj.CoreCompileInputs.cache
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\stackOverflow.ViewModels\obj\Debug\stackOverflow.ViewModels.dll
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\stackOverflow.ViewModels\obj\Debug\stackOverflow.ViewModels.pdb

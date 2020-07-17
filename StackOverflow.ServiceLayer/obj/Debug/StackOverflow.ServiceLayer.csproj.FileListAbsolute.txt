@@ -1,0 +1,12 @@
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\bin\Debug\StackOverflow.ServiceLayer.dll
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\bin\Debug\StackOverflow.ServiceLayer.pdb
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\bin\Debug\StackOverflow.DomainModel.dll
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\bin\Debug\EntityFramework.dll
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\bin\Debug\StackOverflow.DomainModel.pdb
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\bin\Debug\StackOverflow.DomainModel.dll.config
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\bin\Debug\EntityFramework.xml
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\obj\Debug\StackOverflow.ServiceLayer.csprojAssemblyReference.cache
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\obj\Debug\StackOverflow.ServiceLayer.csproj.CoreCompileInputs.cache
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\obj\Debug\StackOverflow.ServiceLayer.csproj.CopyComplete
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\obj\Debug\StackOverflow.ServiceLayer.dll
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\obj\Debug\StackOverflow.ServiceLayer.pdb

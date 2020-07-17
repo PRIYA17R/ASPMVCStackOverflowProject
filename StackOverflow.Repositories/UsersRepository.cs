@@ -14,7 +14,7 @@ namespace StackOverflow.Repositories
         void InserUser(User u);
         void UpdateUserDetail(User u);
         void UpdateUserPassword(User u);
-        void DeleteUser(User u);
+        void DeleteUser(int uid);
         List<User> GetUsers();
 
         List<User> GetUsersByEmailAndPassword(string Email, string Password);
