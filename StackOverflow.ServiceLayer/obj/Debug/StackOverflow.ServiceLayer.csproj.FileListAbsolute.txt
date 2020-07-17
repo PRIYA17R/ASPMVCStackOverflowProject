@@ -16,3 +16,8 @@ C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\bin\De
 C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\bin\Debug\stackOverflow.ViewModels.dll
 C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\bin\Debug\stackOverflow.ViewModels.pdb
 C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\bin\Debug\stackOverflow.ViewModels.dll.config
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\bin\Debug\StackOverflow.ServiceLayer.dll.config
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\bin\Debug\AutoMapper.dll
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\bin\Debug\AutoMapper.xml
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverflow.ServiceLayer\bin\Debug\EntityFramework.SqlServer.xml
