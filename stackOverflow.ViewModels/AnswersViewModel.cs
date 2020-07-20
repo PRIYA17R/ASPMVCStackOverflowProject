@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace stackOverflow.ViewModels
 {
-    class AnswersViewModel
+   public class AnswersViewModel
     {
 
         public int AnswerID { get; set; }

@@ -7,11 +7,11 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 
+
 namespace stackOverflow.ViewModels
 {
-    public class QuestionViewMode
+    public class QuestionViewModel
     {
-        [Required]
 
         public int QuestionID { get; set; }
         public string QuestionName { get; set; }
@@ -34,9 +34,11 @@ namespace stackOverflow.ViewModels
 
         public CategoriesViewModel Category { get; set; }
 
-        public virtual List<EditQuestionViewModel> Question { get; set; }
-  
+        public virtual List<AnswersViewModel> Answers { get; set; }
 
-}
+
+
+
+    }
 
 }

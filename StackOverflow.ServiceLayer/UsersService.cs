@@ -24,9 +24,8 @@ namespace StackOverflow.ServiceLayer
         List<UserViewModel> GetUsers();
 
         UserViewModel GetUsersByEmailAndPassword(string email, string password);
-        UserViewModel GetUsersByEmail(string emial);
+        UserViewModel GetUsersByEmail(string email);
 
-        UserViewModel GetUsersByUserID(int UserID);
 
     }
    public class UsersService : IUsersService

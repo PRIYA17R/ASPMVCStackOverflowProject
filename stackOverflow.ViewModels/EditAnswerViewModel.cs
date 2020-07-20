@@ -29,6 +29,6 @@ namespace stackOverflow.ViewModels
         public int VotesCount { get; set; }
 
         [Required]
-        public virtual QuestionViewMode Question { get; set; }
+        public virtual QuestionViewModel Question { get; set; }
     }
 }

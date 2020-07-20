@@ -16,13 +16,13 @@ namespace StackOverflow.DomainModel
 
         public DateTime QuestionDateAndTime{ get; set; }
 
-        public int UserID { get; set; }
+        public int? UserID { get; set; }
 
-        public int CategoryID { get; set; }
+        public int? CategoryID { get; set; }
 
         public int VotesCount { get; set; }
 
-        public int AnswerssCount { get; set; }
+        public int AnswersCount { get; set; }
 
         public int ViewsCount { get; set; }
 
@@ -33,5 +33,6 @@ namespace StackOverflow.DomainModel
         public virtual Category Category { get; set; }
 
         public virtual List<Answer> Answers { get; set; }
+
     }
 }

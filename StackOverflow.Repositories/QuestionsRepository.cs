@@ -23,7 +23,7 @@ namespace StackOverflow.Repositories
 
         List<Question> GetQuestionsByQuestionID(int qid);
     }
-    class QuestionsRepository : IQuestionsRepository
+    public class QuestionsRepository : IQuestionsRepository
     {
         StackeOverflowDBContext db;
 
@@ -67,7 +67,7 @@ namespace StackOverflow.Repositories
             Question existingQ = db.Questions.Where(t => t.QuestionID == qid).FirstOrDefault();
             if (existingQ != null)
             {
-                existingQ.AnswerssCount += value;
+                existingQ.AnswersCount += value;
                 db.SaveChanges();
             }
         }
