@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnswersService.cs" />
     <Compile Include="CategoryService.cs" />
     <Compile Include="MapperExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

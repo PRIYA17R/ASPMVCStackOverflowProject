@@ -88,3 +88,8 @@ C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverFlowProject\obj\Debug\St
 C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverFlowProject\bin\stackOverflow.ViewModels.dll
 C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverFlowProject\bin\stackOverflow.ViewModels.pdb
 C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverFlowProject\bin\stackOverflow.ViewModels.dll.config
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverFlowProject\bin\Antlr3.Runtime.dll
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverFlowProject\bin\System.Web.Optimization.dll
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverFlowProject\bin\WebGrease.dll
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverFlowProject\bin\Antlr3.Runtime.pdb
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\StackOverFlowProject\bin\System.Web.Optimization.xml
