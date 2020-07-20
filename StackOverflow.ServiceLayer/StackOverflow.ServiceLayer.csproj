@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CategoryService.cs" />
     <Compile Include="MapperExtension.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SHA256HashGenerator.cs" />
