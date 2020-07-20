@@ -9,3 +9,4 @@ C:\Priya\ASP_MVC5_Project\StackOverFlowProject\stackOverflow.ViewModels\bin\Debu
 C:\Priya\ASP_MVC5_Project\StackOverFlowProject\stackOverflow.ViewModels\bin\Debug\EntityFramework.xml
 C:\Priya\ASP_MVC5_Project\StackOverFlowProject\stackOverflow.ViewModels\bin\Debug\EntityFramework.SqlServer.xml
 C:\Priya\ASP_MVC5_Project\StackOverFlowProject\stackOverflow.ViewModels\obj\Debug\stackOverflow.ViewModels.csproj.CopyComplete
+C:\Priya\ASP_MVC5_Project\StackOverFlowProject\stackOverflow.ViewModels\obj\Debug\stackOverflow.ViewModels.csprojAssemblyReference.cache

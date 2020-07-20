@@ -17,7 +17,7 @@ namespace StackOverflow.Repositories
         void DeleteUser(int uid);
         List<User> GetUsers();
 
-        List<User> GetUsersByEmailAndPassword(string Email, string Password);
+       User GetUsersByEmailAndPassword(string Email, string Password);
 
         List<User> GetUsersByEmail(string Email);
         User GetUsersByUserID(int UserID);
@@ -64,9 +64,9 @@ namespace StackOverflow.Repositories
             return u;
         }
 
-        public List<User> GetUsersByEmailAndPassword(string Email, string Password)
+        public User GetUsersByEmailAndPassword(string Email, string Password)
         {
-            List<User> u = db.Users.Where(t => t.Email == Email && t.PasswordHash == Password).OrderBy(t => t.Name).ToList();
+            User u = db.Users.Where(t => t.Email == Email && t.PasswordHash == Password).OrderBy(t => t.Name).FirstOrDefault();
             return u;
         }
 
