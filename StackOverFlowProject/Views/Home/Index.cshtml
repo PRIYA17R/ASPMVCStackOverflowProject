@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<stackOverflow.ViewModels.QuestionViewModel>
+@{
     ViewBag.Title = "Home";
 }
 <div class="row">
@@ -8,7 +9,24 @@
             <h4>This is sample stack overflow project, I have it developed in Asp.net MVC and sql database </h4>
             <p class="lead"> I hope you will like to browse throgh and provide feedback</p>
         </div>
-
+        <div class=" row">
+            <table class="table">
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.VotesCount</td>
+                        <td>@item.AnswerCount</td>
+                        <td>@item.ViewsCount</td>
+                        <td>@item.QuestionName <br />
+                            @item.Category.CategoryName
+                        </td>
+                        <td>@item.User.Name</td>
+                        <td>@item.QuestionDateAndTime</td>
+                    </tr>
+                }
+            </table>
+        </div>
     </div>
+  
 </div>    
 

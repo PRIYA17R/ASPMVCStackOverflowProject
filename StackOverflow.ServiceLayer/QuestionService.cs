@@ -42,9 +42,13 @@ namespace StackOverflow.ServiceLayer
         public List<QuestionViewModel> GetQuestions()
         {
             List<Question> q = qr.GetQuestions();
-            var config = new MapperConfiguration(cfg => { cfg.CreateMap< Question, QuestionViewModel>(); cfg.IgnoreUnMapped(); });
+            var config = new MapperConfiguration(cfg => { cfg.CreateMap<Question, QuestionViewModel>(); cfg.IgnoreUnMapped(); 
+                                                          cfg.CreateMap<Category, CategoriesViewModel>(); cfg.IgnoreUnMapped();
+                                                          cfg.CreateMap<User, UserViewModel>(); cfg.IgnoreUnMapped();
+                                                  });
             IMapper mapper = config.CreateMapper();
             List<QuestionViewModel> qvm = mapper.Map<List<Question>, List<QuestionViewModel>>(q);
+            //category = (Categoies)AutoMapper.Mapper.Map(viewModel, category, typeof(CategoriesViewModel), typeof(Categoies));
             return qvm;
         }
 

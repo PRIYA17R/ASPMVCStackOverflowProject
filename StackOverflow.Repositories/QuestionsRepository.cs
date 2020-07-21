@@ -67,7 +67,7 @@ namespace StackOverflow.Repositories
             Question existingQ = db.Questions.Where(t => t.QuestionID == qid).FirstOrDefault();
             if (existingQ != null)
             {
-                existingQ.AnswersCount += value;
+                existingQ.AnswerCount += value;
                 db.SaveChanges();
             }
         }

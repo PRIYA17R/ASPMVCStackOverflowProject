@@ -26,7 +26,7 @@ namespace stackOverflow.ViewModels
         public int VotesCount { get; set; }
 
         [Required]
-        public int AnswersCount { get; set; }
+        public int AnswerCount { get; set; }
 
         [Required]
         public int ViewsCount { get; set; }

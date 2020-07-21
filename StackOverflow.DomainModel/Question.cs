@@ -22,7 +22,7 @@ namespace StackOverflow.DomainModel
 
         public int VotesCount { get; set; }
 
-        public int AnswersCount { get; set; }
+        public int AnswerCount { get; set; }
 
         public int ViewsCount { get; set; }
 
