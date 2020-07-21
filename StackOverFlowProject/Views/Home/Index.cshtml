@@ -14,11 +14,13 @@
                 @foreach (var item in Model)
                 {
                     <tr>
-                        <td>@item.VotesCount</td>
-                        <td>@item.AnswerCount</td>
-                        <td>@item.ViewsCount</td>
-                        <td>@item.QuestionName <br />
-                            @item.Category.CategoryName
+                        <td><span class="badge badge-secondary">@item.VotesCount </span> Votes</td>
+                        <td><span class="badge badge-secondary">@item.AnswerCount </span> Answer</td>
+                        <td><span class="badge badge-secondary"> @item.ViewsCount </span> Count</td>
+                        <td class="text-dark">
+                            <a class="text-primary" href="/questions/View/@item.QuestionID"> @item.QuestionName </a>
+                            <br />
+                            <span class="badge badge-info"> @item.Category.CategoryName </span>
                         </td>
                         <td>@item.User.Name</td>
                         <td>@item.QuestionDateAndTime</td>
