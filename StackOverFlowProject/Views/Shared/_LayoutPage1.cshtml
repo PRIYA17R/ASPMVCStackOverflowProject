@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width" />
     <meta charset="utf-8">
     <title>@ViewBag.Title - StackOverflow</title>
+    <script src="~/Scripts/jquery-3.5.1.min.js"></script>
     @Styles.Render("~/Style/bootstrap")
-    @Styles.Render("~/Style/Site")
     @Styles.Render("~/Scripts/bootstrap")
+    @Styles.Render("~/Style/Site")
+
 </head>
 <body>
     <div class="container-fluid">
@@ -24,37 +26,24 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="/home/Index">Home </a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="/home/About">About </a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item">
                             <a class="nav-link" href="/home/Contact">Contact </a>
                         </li>
-                        <li class="nav-item active">
+					@if (Session["CurrentUserName"] != null)
+                        {
+                        <li class="nav-item">
                             <a class="nav-link" href="/home/Categories">Categories </a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/home/AllQuestion">Questions </a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/AllQuestion">Questions </a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="/home/Index">Home </a>
-                        </li>
-                        @if (Session["CurrentUserName"] == null)
-                        {
-                            <li class="nav-item active">
-                                <a class="nav-link" href="/account/Login">LogIn </a>
-                            </li>
-                            <li class="nav-item active">
-                                <a class="nav-link" href="/account/Register">Register </a>
-                            </li>
-                        }
-                        @if (Session["CurrentUserName"] != null)
-                        {
-                            <li class="nav-item dropdown ">
-                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-                                    <img src="~/Imgaes/user.png" width="20px" />
-
-                                </a>
+						 <li class="nav-item dropdown ">
+                             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+                                 <img src="~/Imgaes/user.png" width="20px" /> @Session["CurrentUserName"]
+                             </a>
                                 <div class="dropdown-menu bg-info">
                                     <a class="dropdown-item" href="/account/logout"> Logout</a>
                                     <a class="dropdown-item" href="/account/changeProfile"> Change Profile</a>
@@ -62,13 +51,22 @@
 
                                 </div>
                             </li>
+                       }
+                        @if (Session["CurrentUserName"] == null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" href="/account/Login">LogIn </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/account/Register">Register </a>
+                            </li>
+                           
                         }
                     </ul>
                 </div>
                 <form class="form-inline" action="/home/Search">
                     <input type="search" class="form-control mr-sm-2" style="width: 150px" placeholder="Search" name="str" />
                     <button class="btn btn-success"> Search </button>
-
                 </form>
         </nav>
 

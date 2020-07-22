@@ -11,9 +11,11 @@ namespace StackOverFlowProject
     {
         public static void RegisterBundles(BundleCollection bundles)
         {
-            bundles.Add(new ScriptBundle("~/Scripts/bootstrap").Include("~/Scripts/jquery-3.5.1.js", "~/Scripts/umd/popper.js"));
+            bundles.Add(new ScriptBundle("~/Scripts/bootstrap").Include("~/Scripts/jquery-3.5.1.js", "~/Scripts/umd/popper.js", "~/Scripts/bootstrap.js", "~/Scripts/jquery-3.5.1.min.js"));
+
             bundles.Add(new StyleBundle("~/Style/bootstrap").Include("~/Content/bootstrap.css"));
             bundles.Add(new StyleBundle("~/Style/Site").Include("~/Content/Style.css"));
+           
             BundleTable.EnableOptimizations = true;
         }
     }

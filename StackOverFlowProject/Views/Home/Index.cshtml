@@ -16,8 +16,15 @@
                     Html.RenderPartial("Question", item ); 
                 }
             </table>
+            @if(Session["CurrentUserName"]!= null)
+            {
+                <a href="/questions/Create" class="btn btn-primary"> Add Question </a>
+            }
         </div>
     </div>
   
 </div>    
 
+<script>
+    $("a[href='/home/Index']").attr("id", "active");
+</script>
