@@ -1,0 +1,51 @@
+﻿@model stackOverflow.ViewModels.LoginViewModel 
+@{
+    ViewBag.Title = "Login";
+}
+
+<div class="row">
+    <div class="col-sm12">
+        <div class="mx-auto login-box" style="width:600px">
+            <h4> Login </h4>
+            <form action="/account/Login" method="post" class="needs-validation" novalidate="novalidate">
+                @Html.AntiForgeryToken()
+                <div class="form-group mr-3">
+                    <label for="Email" class="mr-1">Email</label>
+                    <input type="email" class="form-control" id="email" name="Email" required autofocus value="@Model.Email" />
+                    <div class="invalid-feedback"> Invalid Email</div>
+                    <div class="valid-feedback">Looks good</div>
+                </div>
+                <div class="form-group mr-3">
+                    <label for="Password" class="mr-1">Password</label>
+                    <input type="password" class="form-control" id="password" name="Password" required value="@Model.Password" />
+                    <div class="valid-feedback">Looks good</div>
+                    <div class="invalid-feedback"> Invalid Password</div>
+                </div>
+                <button class="btn btn-success">Login</button>
+                <button class="btn btn-info">Cancel</button>
+                <div class="text-danger">
+                    @Html.ValidationSummary()
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    $("a[href='/account/Login']").attr("id", "active");
+
+    $(document).on("submit", ".needs-validation", validate);
+    $(".needs-validation input").blur(validate);
+    function validate(event) {
+        if ($(".needs-validation")[0].checkValidity() == false)
+        {
+            event.preventDefault();
+        }
+        $(".needs-validation")[0].classList.add("was-validated");
+    }
+
+    function escapeRegExp(str) {
+        return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+    }
+</script>
