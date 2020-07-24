@@ -12,9 +12,11 @@ namespace StackOverFlowProject.Controllers
     {
         // GET: Home
         IQuestionService qs;
+   //     ICategoryService cs;
         public HomeController(IQuestionService qs)
         {
             this.qs = qs;
+           // this.cs = cs;
         }
         public ActionResult Index()
         {
@@ -30,5 +32,15 @@ namespace StackOverFlowProject.Controllers
         {
             return View();
         }
+        public ActionResult Questions()
+        {
+            List<QuestionViewModel> qlist = this.qs.GetQuestions();
+            return View(qlist);
+        }
+        //public ActionResult Categories()
+        //{
+        //    List<CategoriesViewModel> categories = this.cs.GetCategories();
+        //    return View(categories);
+        //}
     }
 }

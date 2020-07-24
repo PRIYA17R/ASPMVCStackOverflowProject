@@ -32,36 +32,48 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/home/Contact">Contact </a>
                         </li>
-					@if (Session["CurrentUserName"] != null)
-                        {
                         <li class="nav-item">
                             <a class="nav-link" href="/home/Categories">Categories </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="/AllQuestion">Questions </a>
+                            <a class="nav-link" href="/home/Questions">Questions </a>
                         </li>
-						 <li class="nav-item dropdown ">
-                             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-                                 <img src="~/Imgaes/user.png" width="20px" /> @Session["CurrentUserName"]
-                             </a>
-                                <div class="dropdown-menu bg-info">
-                                    <a class="dropdown-item" href="/account/Logout"> Logout</a>
-                                    <a class="dropdown-item" href="/account/changeProfile"> Change Profile</a>
-                                    <a class="dropdown-item" href="/account/changePassword"> Change Password</a>
-
-                                </div>
-                            </li>
-                       }
                         @if (Session["CurrentUserName"] == null)
                         {
+
+
                             <li class="nav-item">
                                 <a class="nav-link" href="/account/Login">LogIn </a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="/account/Register">Register </a>
                             </li>
-                           
                         }
+                        @if (Session["CurrentUserName"] != null)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" href="/account/changeProfile">change Profile </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/account/ChangePassword">Change Password </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/account/Logout">Logout </a>
+                            </li>
+                            <li class="nav-item dropdown">
+
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                                    <img src="~/Imgaes/user.png" width="20px" /> @Session["CurrentUserName"]
+
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="/account/Logout"> Logout </a>
+                                    <a class="dropdown-item" href="/account/ChangeProfile"> Change Profile</a>
+                                    <a class="dropdown-item" href="/account/changePassword"> Change Password</a>
+                                </div>
+                            </li>
+                        }
+
                     </ul>
                 </div>
                 <form class="form-inline" action="/home/Search">

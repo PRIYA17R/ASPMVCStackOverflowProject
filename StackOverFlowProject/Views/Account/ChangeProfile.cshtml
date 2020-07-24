@@ -1,0 +1,71 @@
+﻿@model stackOverflow.ViewModels.EditUserViewModel
+@{
+    ViewBag.Title = "Update Profile";
+}
+
+
+<div class="row">
+    <div class="col-sm-12">
+        <h1>Update Profile</h1>
+        <form novalidate="novalidate" action="/Account/ChangeProfile" method="post" class="needs-validation">
+            @Html.AntiForgeryToken()
+            <div class="form-row">
+                <div class="form-group col-sm-12">
+                    <label for="txtName">Name</label>
+                    @Html.HiddenFor(temp => temp.UserID)
+                    <input type="text" class="form-control" id="txtName" placeholder="Enter name" value=" @Model.Name" name="Name" required="required" pattern="^[a-zA-Z ]*$" autofocus="autofocus" />
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please enter name [alphabets only].
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="txtEmail">Email</label>
+                    <span>@Model.Email</span>
+                    @Html.HiddenFor(temp=> temp.Email)
+                </div>
+
+                <div class="form-group col-sm-6">
+                    <label for="txtMobile">Mobile</label>
+                    <input type="text" class="form-control" id="txtMobile" placeholder="Mobile" name="Mobile" required="required" value="@Model.Mobile" pattern="^[789]\d{9}$" />
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                    <div class="invalid-feedback">
+                        Invalid mobile Number.
+                    </div>
+                </div>
+            </div>
+
+
+
+            <button type="submit" class="btn btn-primary">Save</button>
+            <button type="reset" class="btn btn-danger">Cancel </button>>
+        </form>
+    </div>
+</div>
+
+<script>
+
+    $("a[href='/account/ChangeProfile']").attr("id", "active");
+
+    $(document).on("submit", ".needs-validation", validate);
+    $(".needs-validation input").blur(validate);
+    function validate(event) {
+        if ($(".needs-validation")[0].checkValidity() == false) {
+            event.preventDefault();
+        }
+        $(".needs-validation")[0].classList.add("was-validated");
+    }
+
+    function escapeRegExp(str) {
+        return str.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, "\\$&");
+    }
+</script>
+
+

@@ -24,6 +24,7 @@ namespace StackOverflow.ServiceLayer
    public class CategoryService : ICategoryService
     {
         CategoriesRepository cr;
+
         CategoryService()
         {
             cr = new CategoriesRepository();

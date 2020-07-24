@@ -25,6 +25,7 @@ namespace StackOverflow.ServiceLayer
 
         UserViewModel GetUsersByEmailAndPassword(string email, string password);
         UserViewModel GetUsersByEmail(string email);
+        UserViewModel GetUsersByUserID(int UserID);
 
 
     }
@@ -114,7 +115,7 @@ namespace StackOverflow.ServiceLayer
 
         public void UpdateUserPassword(EditUserPassword uvm)
         {
-            var config = new MapperConfiguration(cfg => { cfg.CreateMap<EditUserViewModel, User>(); cfg.IgnoreUnMapped(); });
+            var config = new MapperConfiguration(cfg => { cfg.CreateMap<EditUserPassword, User>(); cfg.IgnoreUnMapped(); });
             IMapper mapper = config.CreateMapper();
             User u = mapper.Map<EditUserPassword, User>(uvm);
             u.PasswordHash = SHA256HashGenerator.GenerateHash(uvm.Password);
